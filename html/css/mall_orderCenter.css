@@ -325,15 +325,14 @@
   position: relative;
   top: 0;
   left: 0rem;
-  z-index: 5;
-  width: 100%;
+  width: 115%;
   background: #f2f2f2;
 }
 .SCSW_list table td {
   vertical-align: middle;
 }
 .SCSW_list .SCSWL_pic {
-  width: 3.125rem;
+  width: 27.174%;
   padding: 0.234375rem 0;
 }
 .SCSW_list .SCSWL_pic img {
@@ -341,7 +340,7 @@
   height: 2.8125rem;
 }
 .SCSW_list .SCSWL_details {
-  width: 6.3125rem;
+  width: 52.173%;
   padding: 0.234375rem 0.15625rem 0.234375rem 0;
   vertical-align: top;
 }
@@ -385,33 +384,45 @@
   font-size: 0.28125rem;
   color: #999;
 }
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_maxPromt {
+  font-size: 0.28125rem;
+  height: 0.625rem;
+  line-height: 0.625rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num {
   float: right;
-  width: auto;
+  width: 0.625rem;
   height: 0.625rem;
-  padding: 0 0.046875rem;
-  line-height: 0.5625rem;
+  margin-left: 0.078125rem;
   border: 0.015625rem solid #b7b7b7;
-  -webkit-border-radius: 0.3125rem;
-  -moz-border-radius: 0.3125rem;
-  -ms-border-radius: 0.3125rem;
-  -o-border-radius: 0.3125rem;
-  border-radius: 0.3125rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
   background: #fff;
-}
-.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num .reduce,
-.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num span,
-.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num b {
-  display: none;
 }
 .SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num .reduce,
 .SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num .add {
   font-size: 0.375rem;
-  padding: 0 0.0625rem;
+  padding: 0rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
 }
-.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num b {
-  padding: 0 0.15625rem;
-  font-size: 0.375rem;
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num .add {
+  line-height: 0.66rem;
+  display: inline-block;
+}
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num input {
+  border: none;
+  background: none;
+  text-align: center;
+  font-size: 0.34375rem;
+  font-family: Arial;
   font-weight: bold;
   color: #333;
 }
@@ -419,34 +430,58 @@
   font-size: 0.3125rem;
   color: #bababa;
 }
-.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow {
-  padding: 0 0.15625rem;
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num .reduce,
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num span,
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_num input {
+  display: none;
 }
-.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow .reduce,
-.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow span,
-.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow b {
-  display: inline-block;
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow {
+  width: auto;
+  height: 0.625rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+  border-radius: 0.3125rem;
+  padding: 0 0.15625rem;
+  overflow: hidden;
+}
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow i,
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow span {
+  float: left;
+}
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow span {
+  display: inline;
+  padding-top: 0.0625rem;
+}
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow input {
+  float: left;
+  display: inline;
+  height: 0.6rem;
+  padding: 0 0 0 0.078125rem;
+  line-height: 0.6rem;
+  overflow: visible;
+  zoom: normal;
+  width: auto;
+  max-width: 0.93rem;
+  min-width: 0.5625rem;
+}
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow .add,
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow .reduce {
+  display: inline;
+  padding: 0 0.0625rem;
+}
+.SCSW_list .SCSWL_details .SCSWL_detPrice .SCSWL_numShow .add {
+  line-height: 0.6rem;
 }
 .SCSW_list .SCSWL_delete {
-  display: table-cell;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  width: 1.5rem;
+  width: 13.04%;
   height: 100%;
   background: #f05d4e;
   text-align: center;
   vertical-align: middle;
   color: #fff;
   font-size: 0.375rem;
-}
-.SCSW_list .SCSWL_delete b {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  margin-top: -0.1953125rem;
-  margin-right: -0.375rem;
 }
 .SCSW_listLeft {
   margin-left: -1.5rem;
@@ -457,7 +492,7 @@
   width: 1.5rem;
 }
 .SCSWL_checkradio {
-  width: 0.875rem;
+  width: 7.6%;
 }
 .SCSWL_checkradio .SCSW_radio {
   margin-left: 0.234375rem;
@@ -1053,8 +1088,17 @@
   border-top: 0.015625rem solid rgba(151,151,151,0.5);
   background-color: #fff;
   z-index: 50;
+  zoom: 1;
 }
-.footerbottom .cbicon {
+.footerbottom .infortext {
+  display: table;
+  max-width: 7.25rem;
+}
+.footerbottom .infortext .cbTotal {
+  width: auto;
+  display: inline-block;
+}
+.footerbottom .infortext .cbicon {
   background: url("../images/cbicon.png") no-repeat top center;
   width: 0.35rem;
   height: 0.35rem;
@@ -1063,23 +1107,50 @@
   vertical-align: middle;
   margin: 0 0.078125rem;
 }
+.footerbottom .infortext .cbicon b {
+  display: inline-block;
+}
 .footerbottom .leftext {
-  line-height: 1.125rem;
+  height: 1.125rem;
   margin-left: 0.25625rem;
 }
+.footerbottom .leftext b {
+  display: table-cell;
+}
 .footerbottom .leftext em {
+  display: inline-block;
   color: #222;
   font-size: 0.4375rem;
-  display: inline-block;
   margin-left: 0.15625rem;
 }
-.footerbottom .leftext span {
+.footerbottom .leftext strong {
+  padding-top: 0.28125rem;
+  display: table-cell;
+}
+.footerbottom .leftext table {
+  display: table-cell;
+  vertical-align: top;
   color: #666;
   font-size: 0.375rem;
-  display: inline-block;
-  margin-left: 0.3125rem;
+  margin: 0;
+  padding: 0 0 0 0.3125rem;
+  width: 5.4rem;
+  height: 1.125rem;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-.footerbottom .leftext span i {
+.footerbottom .leftext table td {
+  height: 1.125rem;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.footerbottom .leftext table .tdWidth {
+  padding-left: 0.046875rem;
+  width: 3.984375rem;
+}
+.footerbottom .leftext table i {
   color: #f00;
 }
 .footerbottom .simulationRadio {
@@ -1105,6 +1176,8 @@
 .footerbottom .ckroot b {
   position: relative;
   font-size: 0.25rem;
+  text-align: center;
+  display: inline-block;
 }
 .footerbottom .rightext {
   text-align: right;
@@ -1140,12 +1213,19 @@
 }
 .footerbottom .inforbtn a {
   color: #fff;
-  width: 2.765625rem;
-  height: 1.25rem;
+  width: 2.75rem;
+  height: 1.125rem;
   display: inline-block;
   background-color: #f05d4e;
-  line-height: 1.25rem;
+  line-height: 1.125rem;
   font-size: 0.375rem;
+}
+:after {
+  clear: both;
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 .cancelOrdeLayer_bg {
   display: none;
